@@ -1,4 +1,4 @@
-// package Abstract_Class;
+package Abstract_Class;
 abstract class A {
     abstract void A1();
 
