@@ -1,5 +1,10 @@
-// package Abstract_Class;
-
+/*  what's in this program
+ * Created 3 classes for abstract demo
+ * In which i don't created Class B as abstract or 
+ * can say does not define abstract method in Class B
+ * because of which B also becomes an Abstrct class
+ * But i don't used abstract keyword with Class B
+ */ 
 abstract class A {
     abstract void print();
     void displayA() {
