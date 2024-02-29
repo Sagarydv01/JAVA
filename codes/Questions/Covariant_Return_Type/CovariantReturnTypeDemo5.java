@@ -1,7 +1,7 @@
 // Non-primitive and Primitive return type
 class A {
     A m() {
-        A objA = new A()
+        A objA = new A();
         System.out.println("A");
         return objA;
     }
