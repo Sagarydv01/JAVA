@@ -1,6 +1,6 @@
 // Abstract Class with Covariant return type
 abstract class A {
-	abstact A print();
+	abstact void print();
 	void displayA() {
 		System.out.println("Class A");
 	}
