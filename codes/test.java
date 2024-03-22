@@ -13,5 +13,6 @@ public class test {
             }
             System.out.println();
         }
+        sc.close();
     }
 }
