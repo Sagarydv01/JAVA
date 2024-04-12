@@ -18,13 +18,13 @@ class Car extends Vehicle {
 class Problem1 {
 	public static void main(String [] args) {
 		Car car = new Car();
-		Car carVehicle = new Vehicle(); // error: incompatible types: Vehicle cannot be converted to Car
+		// Car carVehicle = new Vehicle(); // error: incompatible types: Vehicle cannot be converted to Car
 		Vehicle vehicle = new Vehicle();
 		Vehicle vehicleCar = new Car();
 
 
 		car.drive();
-		vehicleCar.drive();
+		// vehicleCar.drive();
 		vehicle.drive();
 		vehicleCar.drive();
 	}
