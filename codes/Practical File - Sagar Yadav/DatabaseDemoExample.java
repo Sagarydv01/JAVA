@@ -19,7 +19,7 @@ public class DatabaseDemoExample {
 
             System.out.println("Inserting records into the table...");
             stmt = conn.createStatement();
-            String sql = "INSERT INTO student (id, name, department) VALUES (104, 'Priyanshu', 'BCA')";
+            String sql = "INSERT INTO student (id, name, department) VALUES (101, 'Sagar Yadav', 'BCA')";
             stmt.executeUpdate(sql);
             System.out.println("Record(s) inserted successfully");
 
@@ -35,4 +35,4 @@ public class DatabaseDemoExample {
         }
         System.out.println("Radhe Radhe!");
     }
-}
+} // Sagar Yadav, Enrollment No.: 02027902022, 4th Semester, BCA (2022-25)

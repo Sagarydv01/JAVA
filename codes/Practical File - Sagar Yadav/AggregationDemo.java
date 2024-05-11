@@ -1,9 +1,9 @@
 // 8. Write a program to demonstrate the concept of aggregation.
 class Address {
-    private String street;
-    private String city;
-    private String state;
-    private String zipCode;
+    String street;
+    String city;
+    String state;
+    String zipCode;
 
     public Address(String street, String city, String state, String zipCode) {
         this.street = street;
@@ -12,108 +12,34 @@ class Address {
         this.zipCode = zipCode;
     }
 
-    // Getters and setters
-    public String getStreet() {
-        return street;
-    }
-
-    public void setStreet(String street) {
-        this.street = street;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    public String getZipCode() {
-        return zipCode;
-    }
-
-    public void setZipCode(String zipCode) {
-        this.zipCode = zipCode;
-    }
-
-    // toString method to display address details
-    @Override
-    public String toString() {
-        return "Address{" +
-                "street='" + street + '\'' +
-                ", city='" + city + '\'' +
-                ", state='" + state + '\'' +
-                ", zipCode='" + zipCode + '\'' +
-                '}';
+    public String getAddressDetails() {
+        return street + ", " + city + ", " + state + " - " + zipCode;
     }
 }
 
-class Person {
+class Employee {
+    private int id;
     private String name;
-    private int age;
-    private Address address; // Aggregation
+    private Address address;
 
-    public Person(String name, int age, Address address) {
+    public Employee(int id, String name, Address address) {
+        this.id = id;
         this.name = name;
-        this.age = age;
         this.address = address;
     }
 
-    // Getters and setters
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
-    }
-
-    // toString method to display person details
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", address=" + address +
-                '}';
+    public void displayEmployeeDetails() {
+        System.out.println("Employee ID: " + id);
+        System.out.println("Employee Name: " + name);
+        System.out.println("Employee Address: " + address.getAddressDetails());
     }
 }
 
 public class AggregationDemo {
     public static void main(String[] args) {
-        // Create an Address object
-        Address address = new Address("123 Main St", "Cityville", "Stateville", "12345");
+        Address address = new Address("Knowledge Park-3", "Greater Noida", "Uttar Pradesh", "201310");
+        Employee employee = new Employee(24, "Sagar yadav", address);
 
-        // Create a Person object with the Address object
-        Person person = new Person("John Doe", 30, address);
-
-        // Display person details
-        System.out.println("Person Details:");
-        System.out.println(person);
+        employee.displayEmployeeDetails();
     }
 }

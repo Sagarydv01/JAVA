@@ -41,4 +41,4 @@ class AreaCalculator {
         
         sc.close();
     }
-} // Sagar Yadav, Enrolment No.: 02027902022, 4th Semseter, BCA (2022-25)
+} // Sagar Yadav, Enrolment No.: 02027902022, 4th Semester, BCA (2022-25)

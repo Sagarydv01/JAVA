@@ -71,7 +71,6 @@ public class SwingControlsDemo {
         // Add panel to frame
         frame.add(panel);
 
-        // Set frame visibility
         frame.setVisible(true);
     }
-}
+}  // Sagar Yadav, Enrollment No.: 02027902022, 4rth Semester, 2022-25, BCA

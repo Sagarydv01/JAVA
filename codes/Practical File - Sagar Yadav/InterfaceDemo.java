@@ -1,15 +1,15 @@
 // 10. Write a program to demonstrate the concept of interface when two interfaces have unique methods and same data members.
 
 interface Person {
-    String name = "Sagar Yadav"; // Shared data member
+    String name = "Sagar Yadav";
 
-    void displayDetails(); // Unique method
+    void displayDetails(); 
 }
 
 interface Student {
-    String name = "Alice Smith"; // Shared data member
+    String name = "Prasoon Kumar";
 
-    void displayInfo(); // Unique method
+    void displayInfo();
 }
 
 class CollegeStudent implements Person, Student {
@@ -31,3 +31,10 @@ public class InterfaceDemo {
         collegeStudent.displayInfo();
     }
 }
+/*		Student Details
+Sagar Yadav
+Semester: Fourth
+Enrolment No.: 02027902022
+Session: 2022-25
+Course: Bachelor of Computer Application
+*/

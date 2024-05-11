@@ -1,6 +1,6 @@
 // 12. Write a program to demonstrate unchecked exception.
 
-public class UncheckedExceptionDemo {
+class UncheckedExceptionDemo {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5};
         
@@ -9,10 +9,9 @@ public class UncheckedExceptionDemo {
             int num = numbers[10];
             System.out.println("Number: " + num);
         } catch (ArrayIndexOutOfBoundsException e) {
-            // Handling the unchecked exception
             System.out.println("An ArrayIndexOutOfBoundsException occurred!");
             System.out.println("Exception message: " + e.getMessage());
             e.printStackTrace();
         }
     }
-}
+} // Sagar Yadav, Enrolment No.: 02027902022, 4th Semester, BCA (2022-25)

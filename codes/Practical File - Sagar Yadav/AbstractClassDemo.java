@@ -4,16 +4,14 @@ abstract class Student {
     private String name;
     private int rollNumber;
 
-    // Constructor for Student class
     public Student(String name, int rollNumber) {
         this.name = name;
         this.rollNumber = rollNumber;
     }
 
-    // Abstract method to be implemented by subclasses
     public abstract void displayDetails();
 
-    // Final method to display student information
+    // Final method 
     public final void displayStudentInfo() {
         System.out.println("Name: " + name);
         System.out.println("Roll Number: " + rollNumber);
@@ -23,13 +21,12 @@ abstract class Student {
 class BCAStudent extends Student {
     private String semester;
 
-    // Constructor for BCAStudent class
     public BCAStudent(String name, int rollNumber, String semester) {
         super(name, rollNumber);
         this.semester = semester;
     }
 
-    // Implementation of abstract method
+
     @Override
     public void displayDetails() {
         System.out.println("BCA Student Details:");
@@ -45,5 +42,9 @@ public class AbstractClassDemo {
 
         // Display BCA student details
         bcaStudent.displayDetails();
+
+        System.out.println("\n\n-------------------------------------------------------------------------");
+        System.out.println("| Sagar Yadav, Enrollment No.: 02027902022, 4th Semester (2022-25), BCA |");
+        System.out.println("-------------------------------------------------------------------------");
     }
-}
+} // Sagar Yadav, Enrollment No.: 02027902022, 4th Semester, BCA (2022-25)
