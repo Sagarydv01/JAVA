@@ -1,7 +1,6 @@
 import java.util.Scanner;
-public class ConvertIntoNumberSystem 
+public class ConvertIntoMathematicalReadable
  {
-
     static String[] ones = {
         "", "One", "Two", "Three", "Four", "Five",
         "Six", "Seven", "Eight", "Nine", "Ten",
