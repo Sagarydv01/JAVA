@@ -15,7 +15,7 @@ class Rectangle extends Circle {
 
 public class AreaCalculation {
     public static void main(String[] args) {
-        Circle circle = new Circle();
+        // Circle circle = new Circle();
         Rectangle rectangle = new Rectangle();
 
         Scanner sc = new Scanner(System.in);
@@ -26,7 +26,7 @@ public class AreaCalculation {
         double breadth = sc.nextDouble();
         sc.close();
 
-        double circleArea = circle.area(radius);
+        double circleArea = rectangle.area(radius);
         double rectangleArea = rectangle.area(length, breadth);
 
         System.out.printf("Area of Circle: %.2f%n", circleArea);
