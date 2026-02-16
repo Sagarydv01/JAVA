@@ -13,6 +13,19 @@ public class OperationOnMatrix {
         return result;
     }
 
+    // Subtraction
+    static int[][] subtract(int[][] a, int[][] b) {
+        int rows = a.length;
+        int cols = a[0].length;
+        int[][] result = new int[rows][cols];
+
+        for (int i = 0; i < rows; i++)
+            for (int j = 0; j < cols; j++)
+                result[i][j] = a[i][j] - b[i][j];
+
+        return result;
+    }
+
     // Multiplication
     static int[][] multiply(int[][] a, int[][] b) {
         int rows = a.length;
@@ -54,19 +67,22 @@ public class OperationOnMatrix {
     public static void main(String[] args) {
 
         int[][] matrix1 = {
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}
+                {19, 21, 12},
+                {14, 53, 36},
+                {17, 28, 39}
         };
 
         int[][] matrix2 = {
-                {11, 22, 33},
-                {44, 55, 66},
-                {77, 88, 99}
+                {11, 12, 13},
+                {14, 15, 16},
+                {1, 2, 3}
         };
 
         System.out.println("Addition:");
         print(add(matrix1, matrix2));
+
+        System.out.println("\nSubtraction:");
+        print(subtract(matrix1, matrix2));
 
         System.out.println("\nMultiplication:");
         print(multiply(matrix1, matrix2));
