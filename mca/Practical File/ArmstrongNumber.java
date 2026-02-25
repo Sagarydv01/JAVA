@@ -1,3 +1,4 @@
+// 3. Write a program to find Armstrong number. 
 import java.util.Scanner;
 
 public class ArmstrongNumber {
