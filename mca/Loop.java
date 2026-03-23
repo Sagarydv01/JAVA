@@ -25,6 +25,6 @@ public class Loop {
             System.out.println(i);
 
         }while(i<10);
-
+        scn.close();
     }
 }
