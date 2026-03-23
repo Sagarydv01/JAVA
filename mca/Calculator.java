@@ -34,5 +34,6 @@ public class Calculator {
                 break;
 
         }
+        scn.close();
     }
 }
