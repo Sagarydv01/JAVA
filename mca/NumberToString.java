@@ -57,5 +57,6 @@ public class NumberToString {
             }
             res = res/10;
         }
+        scn.close();
     }
 }
