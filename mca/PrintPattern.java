@@ -9,7 +9,7 @@
 
 public class PrintPattern {
     public static void main(String[] args) {
-        int n = 8, i, j;
+        int i;
         int a = 3, b = 4, k;
 
         for (i = 0; i <= 5; i++) {
