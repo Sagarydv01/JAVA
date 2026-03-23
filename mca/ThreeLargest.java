@@ -10,6 +10,7 @@ public class ThreeLargest {
 
         if (n < 3) {
             System.out.println("Array must contain at least 3 elements");
+            sc.close();
             return;
         }
 
