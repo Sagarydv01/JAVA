@@ -1,9 +1,12 @@
 // package fileHandling;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class FileWriteDemo {
     public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        
         String str = "Radhey Radhey, Namaskar, kya kar rhe, Shivam bhai!";
 
         FileWriter fw = new FileWriter("file1.txt");

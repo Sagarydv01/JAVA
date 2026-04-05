@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.sql.*;
 
-public class Connecting{
+public class ConnectingView{
     public static void main(String[] args) {
         JFrame frame = new JFrame("JDBC Connectivity With Swing");
         JTextField textField = new JTextField(25);
