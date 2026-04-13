@@ -1,4 +1,4 @@
-// package myPackage;
+package myPackage;
 import myPackage.Hello;
 import myPackage.Sum;
 
