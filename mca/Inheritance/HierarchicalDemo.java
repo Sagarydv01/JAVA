@@ -1,5 +1,3 @@
-package Inheritance;
-
 // Parent class
 class Animal {
     void eat() {

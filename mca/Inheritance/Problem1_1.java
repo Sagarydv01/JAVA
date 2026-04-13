@@ -1,4 +1,4 @@
-package Inheritance;
+// package Inheritance;
 
 class MyClass1 {
     int rollNo;

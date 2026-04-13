@@ -1,4 +1,4 @@
-package Inheritance;
+// package Inheritance;
 
 class A {
     protected int dataA;
