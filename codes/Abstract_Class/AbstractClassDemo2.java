@@ -12,6 +12,9 @@ abstract class A {
     }
 }
 class B extends A {
+    void print() {
+        System.out.println("Abstract method in B!");
+    }
     void displayB () {
         System.out.println("Class B!");
     }
