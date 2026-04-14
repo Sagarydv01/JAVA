@@ -1,40 +1,29 @@
-# Smart Git Commit Script
-# Handles add / modify / delete across any directory structure
-
 git status --porcelain | ForEach-Object {
 
-    $status = $_.Substring(0,2)
-    $file = $_.Substring(3).Trim('"')
+    $line = $_
+    $status = $line.Substring(0,2)
+    $file = $line.Substring(3).Trim('"')
 
-    if ($file -eq "") { return }
+    if (-not $file) { return }
 
-    Write-Host "Processing: $file"
+    Write-Host "Processing: $file [$status]"
 
-    # Determine action type
-    switch -Regex ($status) {
-
-        "^\?\?" {
-            git add -- "$file"
-            $message = "add: $file"
-        }
-
-        "^ M|^M " {
-            git add -- "$file"
-            $message = "modify: $file"
-        }
-
-        "^ D|^D " {
-            git rm -- "$file"
-            $message = "delete: $file"
-        }
-
-        default {
-            git add -- "$file"
-            $message = "update: $file"
-        }
+    if ($status -match "^\?\?") {
+        git add -- "$file"
+        git commit -m "add: $file"
     }
-
-    git commit -m $message
+    elseif ($status -match "^.M|^M.") {
+        git add -- "$file"
+        git commit -m "modify: $file"
+    }
+    elseif ($status -match "^.D|^D.") {
+        git rm -- "$file"
+        git commit -m "delete: $file"
+    }
+    else {
+        git add -- "$file"
+        git commit -m "update: $file"
+    }
 
     if ($LASTEXITCODE -eq 0) {
         git push
