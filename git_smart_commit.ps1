@@ -24,8 +24,8 @@ git status --porcelain | ForEach-Object {
         git add -- "$file"
         git commit -m "update: $file"
     }
+}
 
-    if ($LASTEXITCODE -eq 0) {
-        git push
-    }
+if ($LASTEXITCODE -eq 0) {
+    git push
 }
