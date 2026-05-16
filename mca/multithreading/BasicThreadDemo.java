@@ -1,6 +1,7 @@
 // Method 1: Extending the Thread class
 
 class BasicExtendingThread extends Thread {
+    @Override
     public void run() {
         System.out.println("Thread running " + Thread.currentThread().getName());
     }
@@ -8,6 +9,7 @@ class BasicExtendingThread extends Thread {
 
 // Method 2: Implementing Runnable interface
 class BasicRunnableThread implements Runnable {
+    @Override
     public void run() {
         System.out.println("Runnable thread running " + Thread.currentThread().getName());
     }
