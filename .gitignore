@@ -1,3 +1,5 @@
 *.class
 test.java
 ClassRemover.bat
+git_smart_commit.ps1
+.gitignore
